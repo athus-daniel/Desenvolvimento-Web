@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo css</title>
+    <style>
+        p#escolhido{
+            color: aliceblue;
+            background-color: rgb(17, 17, 17);
+        }
+        a {
+            text-decoration: none;
+        }
+        a#rejeitado{
+            color: red;
+            font-size: 1.5rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Esse efeito é do Browser!(5)</h1>
+    <h2>Esse efeito é User-defined!(4) </h2>
+
+
+    <p>Aqui está um parágrafo com efeitos do Browser(5).</p>
+    <p id="escolhido">Esse já é um parágrafo manipulado internamente-Embedded(2)</p>
+
+    <ul>
+        <li style="color: cyan; font-size: 1.2rem;">Estilo em linha-inline(1)</li>
+        <li>Estilo do browser(5)</li>
+        <li>inline</li>
+        <li>outro inline</li>
+        <li><a href="#">mais uma vez!</a></li>
+    </ul>
+    <a id="rejeitado" href="#">Testando o estilo</a>
+</body>
+</html>
