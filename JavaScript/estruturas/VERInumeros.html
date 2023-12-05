@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+
+const num = +prompt("digite um número");
+
+//convertendo para inteiro
+let numConvertido = parseInt(num);
+
+function digitacaoVazia(numConvertido){
+    if(num === ''){
+        alert(`o numero digitado esta vazio`)
+        numConvertido = 0;
+    } 
+    return numConvertido;
+}
+if(numConvertido == 0){
+    alert(`o número que você digitou (${num}) é zero`)
+}
+else if (numConvertido > 0) {
+    alert(`o número que você digitou (${num}) é positivo`)
+}
+else{
+    alert(`o número que você digitou (${num}) é negativo`)
+}
+
+digitacaoVazia(numConvertido);
+
+
+</script>
+
+</body>
+</html>

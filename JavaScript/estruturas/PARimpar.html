@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       /*  var numero;
+
+        numero = prompt("digite um numero:")
+
+        if (numero % 2 == 0){
+            document.write("o numero é par")
+        }
+        else {
+            document.write("o numero é impar")
+        } */
+
+        let num1, num2;
+
+        num1 = Math.random()*10
+        num2 = Math.random()*10
+
+        /* console.log(num1.toFixed(1) + ` ` + num2); */
+
+        //transformando em inteiro
+        let num1Int = num1.toFixed(0)
+        let num2Int = num2.toFixed(0)
+
+        if(num1Int % 2 == 0){
+            console.log(` o numero ${num1Int} é par`)
+        } else {
+            console.log(` o numero ${num1Int} é ímpar`)
+        }
+
+
+    </script>
+
+</body>
+</html>

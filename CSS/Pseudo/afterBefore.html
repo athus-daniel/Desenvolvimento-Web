@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElementos</title>
+    <style>
+        p::before {
+            content: " Leia isso - "; /* adiciona algo antes de uma tag */
+            position: relative;
+            padding: .5rem 1rem;
+            border: 1px solid;
+            background-color: aqua;
+        }
+
+        p::after {
+            content: "- Leia mais"; /* adiciona algo depois de uma tag */
+        }
+    </style>
+</head>
+<body>
+    <p>Meu nome é Athus</p>
+    <p>Eu moro em Olinda</p>
+</body>
+</html>

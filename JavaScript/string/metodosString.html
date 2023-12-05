@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos</title>
+</head>
+<body>
+    
+    <script>
+        //declaração de variáveis
+        let saudacao, ios, nome, frase1, gap;
+    
+        //atribuir valor para as variáveis
+        saudacao = 'olá pessoa cujo nome é ';
+        ios = 'instituto da oportunidade social';
+        gap = ' '
+        //prompt resgata alguma informação do usuário a partir da tela
+        nome = prompt('qual seu nome infeliz?');
+        frase1 = 'ser ou não ser, cadê o busão?'
+
+        //apresentação das variáveis no documento
+        //forma antiga de unir textos
+        document.write(saudacao + gap + nome + '<br>' + gap + frase1 + '<br><br><br>');
+
+        //forma moderna que se chama template string
+        //Interpolação de texto e variáveis usando o identificador 
+        // -> (${aqui dentro escrevo javascript})
+        // é necessário usar crase
+        document.write(`Seja bem vinde <br> ${saudacao} ${nome} <br> ${frase1} <br><br> `);
+        //é possivel retornar operações
+        let produto = 10;
+        document.write(`${produto*2}`);
+        document.write(`<h1>Métodos de String</h1>`);
+        console.log(frase1.length);  //propriedade length retorna o tamanho da variavel
+        console.log(gap.length);
+        console.log(nome.length);
+        console.log(ios.length);
+        console.log(saudacao.length);
+        console.log(produto.length);
+        console.log(frase1.substring(15)); //recorta partes da string
+        console.log(frase1.substring(15, 20) + '?');
+        //Split dividi a frase de acordo com algum caracter que eu escolho
+        console.log(frase1.split(','));
+
+        let frase2 = 'as linguagens de programação são utilizadas para instruir as máquinas a realizarem tarefas de variados tipos por exemplo: calculos financeiros, reconhecimento de padrões, automação de processos, para saber mais leia mais '
+        console.log(frase2.split('a'));
+        //replace serve para trocar parte da string
+        console.log(frase1.replace('busão', 'pão'));
+        console.log(frase1.replace('ser', 'pero'));
+        //tirando espaços em branco de uma string
+        frase1 = '         oi? tudo bem? com você?           '
+        console.log(frase1);
+        console.log(frase1.trim());
+    </script>
+
+</body>
+</html>

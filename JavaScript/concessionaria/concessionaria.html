@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+    <script>
+        //declaração de variaveis
+       let cliente, entrada;
+       let objetivo = ['comprar', 'alugar'];
+       let veiculos = ['moto', 'carro', 'bike'];
+       let tabelaCompra = [10000, 50000, 1000];
+       let tabelaAluga = [100, 500, 10];
+
+       cliente = prompt("digite seu nome:");
+       let seuObjetivo = prompt("você quer:\n[0] comprar\n[1] alugar");
+       let veiculoEscolhido = prompt("você quer:\n[0] moto\n[1] carro\n[2] bike ");
+       entrada = prompt('caso seja compra, qual o seu valor de entrada');
+
+       document.write(`olá ${cliente} percebi que seu objetivo é ${objetivo[+seuObjetivo]} <br>`);
+       document.write(`seu veículo escolhido é do tipo ${veiculos[+veiculoEscolhido]} <br><br>`);
+       document.write(`custa: R$${tabelaCompra[+veiculoEscolhido]} para compra <br>`)
+       document.write(`valor final: R$${tabelaCompra[+veiculoEscolhido] - entrada} <br><br>`)
+       document.write(`custa: R$${tabelaAluga[+veiculoEscolhido]} para alugar ao mês <br>`)
+
+    </script>
+
+</body>
+</html>
